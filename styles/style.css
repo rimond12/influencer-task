@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* ................................................... */
+  /* Shared Style........... */
+  .dark-1{
+    color: #3A3A3A;
+  }
+  .dark-gray{
+    color: #787885;
+  }
+  .display-flex{
+    display: flex;
+  }
+  .arrow{
+    width: 15px;
+    padding-top: 2px;
+  }
+  .btn-primary{
+    font-size: 16px;
+    font-weight: 700;
+    color: aliceblue;
+    padding: 10px 15px;
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    border: none;
+  }
+
+
+  /* Navbar styles */
+  .icon-bar img{
+    width: 20px;
+    height: 20px;
+  }
+ .nav-element a {
+    text-decoration: none;
+    color: #3A3A3A;
+    padding: 34px;
+  }
+  .navbar{
+    justify-content: space-around;
+  }
+  .nav-element{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 95px
+  }
+  .nav-header{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 87px;
+  }
+
+
+  /* Pre-Bppk Section */
+
+  .prebook-tittle{
+    font-size: 52px;
+    font-weight: bold;
+  }
+  .prebook-container{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 200px;
+    margin-top: 50px;
+  }
+  .prebook-img{
+    background-image: url(../images/Circle\ design.svg);
+    max-width: 100%;
+  }
+
+  /* Media Query Section */
+  @media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .prebook-container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap-reverse;
+    }
+  }
