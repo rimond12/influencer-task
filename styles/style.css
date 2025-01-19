@@ -169,7 +169,7 @@
     margin-top: 100px;
   }
   .featured-details{
-    justify-content: center;
+    /* justify-content: center; */
 
   }
   .feature-tittle{
@@ -232,16 +232,22 @@
     }
     .featured-container{
       flex-direction: column-reverse;
-      /* justify-items: center; */
-    }
-    .featured-container img{
       max-width: 100%;
+      justify-items: center;
+      margin-left: 13px;
+    }
+    .featured-container h2 p img{
+      max-width: 100%;
+      margin: 0px;
+      justify-items: center;
+      align-items: center;
     }
     .featured-details{
       justify-content: center;
       justify-items: center;
-      align-items: center;
-      gap: 0px auto;
+    }
+    .feature-tittle{
+      justify-items: center;
     }
   }
 
