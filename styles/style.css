@@ -234,20 +234,19 @@
       flex-direction: column-reverse;
       max-width: 100%;
       justify-items: center;
-      margin-left: 13px;
+      gap: 30px;
     }
-    .featured-container h2 p img{
+    .featured-container img{
       max-width: 100%;
       margin: 0px;
-      justify-items: center;
-      align-items: center;
+      margin-left: 13px;
     }
     .featured-details{
       justify-content: center;
       justify-items: center;
     }
-    .feature-tittle{
-      justify-items: center;
+    .feature-tittle, .featured-description{
+      text-align: center;
     }
   }
 
