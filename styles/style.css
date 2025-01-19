@@ -128,7 +128,7 @@
     font-size: 1.25rem;
     font-weight: 600;
     color: #18191F;
-    text-align: center;
+    /* text-align: center; */
   }
   .price{
     font-size: 1.5rem;
@@ -144,7 +144,45 @@
     font-weight: bold;
     color: #787885;
   }
-  /* Media Query Section */
+  .see-more img{
+    width: 1rem;
+  }
+  .see-more{
+    justify-content: flex-end;
+    max-width: 1500px;
+    color: rgb(224, 44, 109);
+    text-decoration: none;
+    margin-top: 40px;
+    /* max-width: 1150px; */
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  /* Featured Section */
+
+  .featured-container{
+    flex-direction: row;
+    max-width: 1110px;
+    margin: 0px auto;
+    gap: 96px;
+    margin-top: 100px;
+  }
+  .featured-details{
+    justify-content: center;
+
+  }
+  .feature-tittle{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 23px 0px;
+  }
+  .featured-description{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6C6C6C;
+  }
+  /* Media Query Section (SMALL-DEVICE) */
 
   @media screen and (max-width: 576px) {
     .navbar{
@@ -166,6 +204,8 @@
         text-align: center;
         max-width: 100%;
         gap: 20px;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     
     .sponsor-companies{
@@ -190,4 +230,68 @@
       justify-items: center;
       max-width: 100%;
     }
+    .featured-container{
+      flex-direction: column-reverse;
+      /* justify-items: center; */
+    }
+    .featured-container img{
+      max-width: 100%;
+    }
+    .featured-details{
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      gap: 0px auto;
+    }
   }
+
+
+ /* Media Query Section (MEDIUM-DEVICE) */
+ @media screen and (min-width: 576px) and (max-width: 992px) {
+  
+  .navbar{
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.prebook-container{
+  flex-direction: column;
+  flex-direction: column-reverse;
+  justify-content: center;
+  text-align: center;
+}
+ 
+ .nav-element a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 0px;
+}
+.collection-container{
+  grid-template-columns: repeat(2, 1fr);
+}
+.prebook-img{
+  background-repeat: no-repeat;
+  margin-left: 150px;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.prebook-img img{
+  max-width: 100%;
+  
+}
+.sponsor-companies{
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 15px;
+  gap: 20px;
+  align-items: center;
+  margin-left: 70px;
+  border: none;
+}
+ }
